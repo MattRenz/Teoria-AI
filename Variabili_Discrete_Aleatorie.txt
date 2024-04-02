@@ -1,0 +1,97 @@
+Variabile Aleatorie Discrete:
+
+    Una variabile quantitativa si dice discreta quando può assumere un 
+    insieme finito o numerabile di valori, mentre si dice continua quando
+    può assumere, almeno in teoria, tutti i valori compresi in un intervallo 
+    reale o, in altri termini, può assumere una infinità non numerabile di valori diversi.
+
+
+Variabili Condizionate:
+    Le distribuzioni condizionate si ottengono quando si impone un valore ad una variabile 
+    (data una certa modalità di Y) e si studiano i valori corrispondenti dell'altra variabile (X). 
+    Cioè come varia X dato Y.
+
+
+Moda: 
+    In statistica, la moda di una distribuzione di frequenza X è la modalità caratterizzata dalla 
+    massima frequenza e viene spesso rappresentata con la simbologia ν₀. In altre parole, 
+    è il valore che compare più frequentemente
+
+
+
+Media e Varianza
+
+Moda:
+    Il valore medio, anche noto come media aritmetica, rappresenta la somma di tutti i valori nel set di
+    dati divisa per il numero totale di valori. In altre parole, si calcola facendo la somma di tutti i 
+    valori e dividendo per il numero di valori presenti. Il valore medio fornisce una stima del punto centrale 
+    di un insieme di dati e può essere considerato come un rappresentante "tipico" dei valori osservati.
+
+Varianza:
+    La varianza, d'altra parte, è una misura della dispersione dei dati attorno al valore medio. 
+    Rappresenta la media dei quadrati delle differenze tra ogni valore e il valore medio. 
+    La varianza ci indica quanto i valori si discostano mediamente dal valore medio. 
+    Una varianza elevata indica una maggiore dispersione dei dati, mentre una varianza 
+    bassa indica una minore dispersione.
+
+La radice quadrata della varianza è nota come deviazione standard. 
+È spesso utilizzata come misura di dispersione più interpretabile 
+poiché ha le stesse unità di misura dei dati originali.
+
+
+
+Distribuzioni continue e Distribuzioni discrete
+
+DISCRETE
+    Una distribuzione discreta è una distribuzione in cui la variabile casuale può assumere
+    solo un insieme finito o numerabile di valori distinti. Ad esempio, il risultato del 
+    lancio di un dado o il numero di persone in una famiglia sono esempi di variabili casuali discrete. 
+    Le distribuzioni discrete sono rappresentate tramite funzioni di massa di probabilità, che assegnano 
+    una probabilità a ciascun valore che la variabile casuale può assumere.
+
+CONTINUE
+    D'altra parte, una distribuzione continua è una distribuzione in cui la variabile casuale può assumere 
+    infiniti valori all'interno di un intervallo specifico. Ad esempio, l'altezza di una persona o il tempo 
+    impiegato per completare una determinata attività sono esempi di variabili casuali continue. 
+    Le distribuzioni continue sono rappresentate tramite funzioni di densità di probabilità, che descrivono 
+    la probabilità che la variabile casuale cada in un intervallo specifico.
+
+
+
+Distribuzione di Gauss Mu e Sigma
+    In statistica e nella distribuzione di Gauss, μ (mu) e σ (sigma) sono due parametri 
+    che descrivono rispettivamente la media e la deviazione standard della distribuzione. 
+
+
+MASSIMAVEROSOMIGLIANZA
+
+    Prima conoscevamo la legge e la usavamo, urna = [5,4,10] qual è la prob. che in nX estrazioni esca pallina di 
+    un certo colore. Ora il problema è il contrario, dato il valore X (es. num di palline) voglio sapere da qaule urna
+    è stato estratto. Quindi appresa la legge --> osservo le persone --> cerco di capire cosa le descrimina, quindi voglio 
+    apprenere la legge, osservando. 
+
+    La massimaverosomiglianza, è utilizzato per stimare i parametri di un modello matematico o di una distribuzione di probabilità
+    L'obiettivo della massimaverosomiglianza è trovare i valori dei parametri che massimizzano la probabilità o la verosimiglianza 
+    dei dati osservati, dati i parametri del modello. In altre parole, cerca di trovare i parametri che rendono più probabile l'occorrenza 
+    dei dati che abbiamo a disposizione.
+
+
+    ENTROPIA
+    L'entropia o meglio l'entropia relativa, nella massimaverosomiglianza è legata al concetto di incertezza o informazione nei dati, 
+    che può essere considerato nella scelta del modello. è una misura di quanto una distribuzione di probabilità sia diversa da un'altra
+    distribuzione di riferimento. Più il valore è vicino allo 0 e più si è certi dell'informazione, più il valore è vicino all'1 meno si 
+    è certi dell'informazione.
+
+        Come calcolarla:
+
+            esempio a 2 prob.
+
+            probUrna_1 = numeroSuccessi1 / (numeroSuccessi1 + numeroSuccessi2)
+
+            il numero dei successi diviso la somma dei successi, e mi trovo la probabilità
+
+            - entropia = scipy.stats.entropy(lProb)
+
+            - 2max_entropia = math.log(len(lProb))
+
+            - entropia_relativa = entropia / max_entropia

@@ -1,0 +1,49 @@
+DISTRIBUZIONE UNIFORME: 
+
+    La distribuzione uniforme è un tipo di distribuzione di probabilità continua 
+    in cui ogni valore all'internodi un intervallo specificato ha la stessa probabilità 
+    di essere estratto. Questo significa che la probabilità di ottenere un valore qualsiasi 
+    all'interno dell'intervallo è costante e uniforme.
+
+    Un esempio pratico di distribuzione uniforme potrebbe essere il lancio di un dado equo a sei facce. 
+    Nel caso di un dado equo, ogni faccia ha la stessa probabilità di essere estratta, quindi la distribuzione 
+    dei risultati del lancio sarà uniforme. L'intervallo dei possibili risultati è da 1 a 6, quindi la distribuzione 
+    uniforme avrà i parametri a = 1 e b = 6.
+
+    In questo caso, la probabilità di ottenere un determinato valore sul dado è 1/6, poiché ci sono sei risultati possibili
+    e ogni risultato ha la stessa probabilità di 1/6. La distribuzione uniforme ci dice che qualsiasi risultato è altrettanto
+    probabile, che sia un 1, un 2, un 3, un 4, un 5 o un 6.
+
+
+DISTRIBUZIONI DI GAUSS:
+
+    La distribuzione normale è caratterizzata dalla sua forma a campana simmetrica. È completamente determinata da due parametri: 
+    la media (μ) e la deviazione standard (σ). La media determina il punto centrale della distribuzione, mentre la deviazione standard 
+    controlla la sua dispersione o "spalmatura" attorno alla media.
+
+
+DISTRIBUZIONI DI POISSON:
+
+    È particolarmente utile per modellare eventi rari, dove la probabilità di un evento è molto piccola, ma il numero totale di opportunità 
+    per l'evento è grande. La distribuzione di Poisson è spesso utilizzata per modellare fenomeni come il numero di telefonate ricevute in un 
+    centro di assistenza, il numero di clienti in una coda, il numero di errori in un documento o il numero di incidenti in una determinata area.
+
+
+DISTRIBUZIONE CHI-QUADRO:
+
+    La distribuzione di Chi-Quadro è strettamente legata al concetto di somma dei quadrati di variabili casuali normalmente distribuite standardizzate. 
+    Se abbiamo n variabili casuali indipendenti e standardizzate Z1, Z2, ..., Zn, allora la somma dei loro quadrati, X = Z1^2 + Z2^2 + ... + Zn^2, 
+    segue una distribuzione di Chi-Quadro con n gradi di libertà.
+
+    Usata anche per vedere se 2 generatore di eventi sono simili tra loro.
+
+
+DIMOSTRAZIONE DEL TEOREMA DEL LIMITE CENTRALE (TLC):
+
+    Se estraggo a gruppi da una distribuzione qualsiasi e faccio la media di questi gruppi estratti, inserendo i dati in un istogramma, l'istogramma 
+    prendera la forma di una distribuzione normale. 
+
+    sotto alcune condizioni, la somma di un grande numero di variabili casuali indipendenti e identicamente distribuite (i.i.d.) tende a distribuirsi 
+    in modo approssimativamente normale, indipendentemente dalla distribuzione originale delle variabili casuali.
+
+    
